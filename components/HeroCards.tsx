@@ -39,11 +39,13 @@ export const HeroCards = () => {
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
-          <img
-            src="https://i.pravatar.cc/150?img=58"
-            alt="user avatar"
-            className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
-          />
+          <Avatar className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover">
+            <AvatarImage
+              src="https://i.pravatar.cc/150?img=58"
+              alt="user avatar"
+            />
+            <AvatarFallback>LM</AvatarFallback>
+          </Avatar>
           <CardTitle className="text-center">Leo Miranda</CardTitle>
           <CardDescription className="font-normal text-primary">
             Frontend Developer
