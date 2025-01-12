@@ -11,11 +11,7 @@ const config: Config = {
   	extend: {
 		screens: {
 			xsm: '360px', // Small mobile devices
-        sm: '640px',  // Small tablets and larger mobile devices
-        md: '768px',  // Tablets
-        lg: '1024px', // Small laptops
-        xl: '1280px', // Desktops
-        '2xl': '1536px',
+       
 		},
   		colors: {
   			background: 'hsl(var(--background))',

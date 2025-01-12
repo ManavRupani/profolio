@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Badge } from "./ui/badge";
+// import { Badge } from "./ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -9,8 +9,8 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
-import { LightBulbIcon } from "./Icons";
+import {  Linkedin ,LightbulbIcon, EarthLock} from "lucide-react";
+
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const HeroCards = () => {
@@ -22,18 +22,18 @@ export const HeroCards = () => {
           <Avatar>
             <AvatarImage
               alt=""
-              src="https://github.com/shadcn.png"
+              src="https://avatars.githubusercontent.com/u/96404593?s=400&v=4"
             />
-            <AvatarFallback>SH</AvatarFallback>
+            <AvatarFallback>RM</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Manav_Rupani</CardTitle>
+            <CardDescription>@ManavRupani</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent></CardContent>
       </Card>
 
       {/* Team */}
@@ -41,14 +41,14 @@ export const HeroCards = () => {
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <Avatar className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover">
             <AvatarImage
-              src="https://i.pravatar.cc/150?img=58"
+              src="https://media.licdn.com/dms/image/v2/D5603AQGdWNI8bDfWLg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719002509835?e=1742428800&v=beta&t=uBqEidWWYCAitfiaIOzD6wz98VIaqsEU4frjKMieMzE"
               alt="user avatar"
             />
-            <AvatarFallback>LM</AvatarFallback>
+            <AvatarFallback>RM</AvatarFallback>
           </Avatar>
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">Manav Rupani</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Frontend Developer
+            Full Stack Developer
           </CardDescription>
         </CardHeader>
 
@@ -63,7 +63,7 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/ManavRupani"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -75,7 +75,7 @@ export const HeroCards = () => {
             </a>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/leo_mirand4"
+              href="https://twitter.com/mkv29999009"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -96,7 +96,7 @@ export const HeroCards = () => {
 
             <a
               rel="noreferrer noopener"
-              href="https://www.linkedin.com/in/leopoldo-miranda/"
+              href="https://www.linkedin.com/in/manavrupani/"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -114,13 +114,8 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
-            <Badge
-              variant="secondary"
-              className="text-sm text-primary"
-            >
-              Most popular
-            </Badge>
+            blog
+           
           </CardTitle>
           <div>
             <span className="text-3xl font-bold">$0</span>
@@ -128,44 +123,48 @@ export const HeroCards = () => {
           </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            My personal blog where I share my thoughts and experiences
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <a href="https://manavrupani.github.io/blogmanavrupani.github.io/" target="_blank" rel="noopener noreferrer" className="w-full">
+            <Button className="w-full">Visit Blog</Button>
+          </a>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["tech", "programming", "blogging"].map(
               (benefit: string) => (
-                <span
-                  key={benefit}
-                  className="flex"
-                >
-                  <Check className="text-green-500" />{" "}
-                  <h3 className="ml-2">{benefit}</h3>
-                </span>
+          <span
+            key={benefit}
+            className="flex"
+          >
+            <LightbulbIcon className="text-yellow-500" />{" "}
+           
+            <h3 className="ml-2">{benefit}</h3>
+          </span>
               )
             )}
           </div>
         </CardFooter>
+      
       </Card>
 
       {/* Service */}
       <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
-            <LightBulbIcon />
+          <EarthLock className="text-blue-500 w-10 h-10" />
           </div>
           <div>
-            <CardTitle>Light & dark mode</CardTitle>
+            <CardTitle>Dev-ops</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+              building and maintaining the infrastructure for the project,
+              including server setup, database management, and application.
             </CardDescription>
           </div>
         </CardHeader>
