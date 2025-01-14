@@ -49,7 +49,7 @@ export default function RootLayout({
               
             </main>
           </SidebarProvider>
-          <Footer />
+          
         </ThemeProvider>
       </body>
     </html>
