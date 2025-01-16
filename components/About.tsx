@@ -1,5 +1,7 @@
 
 
+import Image from 'next/image';
+import Logo from "@/app/image.png"
 export const About = () => {
   return (
     <section
@@ -8,10 +10,13 @@ export const About = () => {
     >
       <div className="bg-muted/50 border rounded-lg py-12">
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
-          <img
-            src="https://splitwise.s3.amazonaws.com/uploads/user/avatar/74980372/large_c12f42f0-daef-4a21-aeb6-4b16ef46bba8.jpeg"
+          <Image
+            src={Logo}
             alt=""
-            className="w-[300px] object-contain rounded-lg"
+            width={300}
+            height={300}
+            layout="responsive"
+            className="object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
             <div className="pb-6">

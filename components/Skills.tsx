@@ -1,4 +1,4 @@
-import { Radar } from "lucide-react";
+
 import { JSX } from "react";
 
 interface SponsorProps {
@@ -20,16 +20,16 @@ const sponsors: SponsorProps[] = [
     name: "",
   },
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 4",
+    icon: <i className="devicon-azuresqldatabase-plain text-7xl"></i>,
+    name: "",
   },
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 5",
+    icon:<i className="devicon-azure-plain-wordmark text-[150px]"></i>,
+    name: "",
   },
   {
-    icon: <Radar size={34} />,
-    name: "Sponsor 6",
+    icon: <i className="devicon-docker-plain-wordmark text-7xl"></i>,
+    name: "",
   },
 ];
 

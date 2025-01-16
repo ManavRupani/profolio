@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Menu } from 'lucide-react';
 
 import {
@@ -9,9 +10,19 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import ModeToggleMobile, { ModeToggle } from "./theme-toggle";
+import ModeToggleMobile from "./theme-toggle";
 
 export function NavigationMenuDemo() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="p-2 rounded-md bg-gray-200 dark:bg-gray-800">
