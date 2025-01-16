@@ -48,6 +48,8 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --pattern-color-1: #444cf7;
+    --pattern-color-2: #e5e5f7;
   }
   .dark {
     --background: 224 71.4% 4.1%;
@@ -82,6 +84,8 @@ body {
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --pattern-color-1: #0000fd;
+    --pattern-color-2: #000000;
   }
 }
 
@@ -92,42 +96,19 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-
-  @layer utilities {
-    .text-balance {
-      text-wrap: balance;
-    }
-  
-    @keyframes shadow-pulse {
-      0%, 100% {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      }
-      50% {
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-      }
-    }
-  
-    .animate-shadow-pulse {
-      animation: shadow-pulse 2s infinite;
-    }
-  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  @keyframes shadow-pulse {
-    0%, 100% {
-      box-shadow: 0 0 20px rgb(255, 0, 0);
-    }
-    50% {
-      box-shadow: 0 0 40px rgba(21, 65, 16, 0.808);
-    }
-  }
-
-  .animate-shadow-pulse {
-    animation: shadow-pulse 2s infinite;
-  }
+.pattern {
+  position: absolute;
+  
+  z-index: -1;
+  opacity: 0.5;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--pattern-color-1),
+    var(--pattern-color-1) 5px,
+    var(--pattern-color-2) 5px,
+    var(--pattern-color-2) 25px
+  );
+  filter: blur(2px);
 }

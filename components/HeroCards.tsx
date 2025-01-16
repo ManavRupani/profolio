@@ -37,7 +37,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Team */}
-      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10 ">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <Avatar className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover">
             <AvatarImage
@@ -111,7 +111,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[120px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
             blog

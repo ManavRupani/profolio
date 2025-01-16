@@ -56,7 +56,7 @@ export const Hero = () => {
       
       </div>
 
-      {/* Shadow effect */}
+      {/* <div className="pattern w-1/2 h-full absolute right-0 "></div> */}
       
     </section>
   );
