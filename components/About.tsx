@@ -2,7 +2,7 @@ import Image from "next/image";
 import Logo from "@/app/image.png";
 export const About = () => {
   return (
-    <section id="about" className="container py-24 px-20 sm:py-32 mx-auto ">
+    <section id="about" className="container py-24  sm:py-32 mx-auto ">
       <div className="bg-muted/50 border rounded-lg py-12">
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <Image

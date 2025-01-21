@@ -39,7 +39,7 @@ export const Skills = () => {
       id="sponsors"
       className="container pt-24 sm:py-32 mx-auto"
     >
-      <h2 className="text-center text-md lg:text-xl font-bold mb-8 text-primary">
+      <h2 className="text-center text-3xl font-bold text-primary mb-4">
         Skiils and Tools
       </h2>
 
